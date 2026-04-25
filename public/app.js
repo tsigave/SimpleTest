@@ -169,6 +169,8 @@ function populateTestOptions() {
   if (state.selectedTestId) {
     elements.testSelect.value = state.selectedTestId;
   }
+  // Hide test selection if currently only one test available
+  elements.testSelect.classList.toggle("hidden", state.tests.length <= 1);
 }
 
 function populateLanguageOptions(test, preferredLocale) {

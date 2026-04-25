@@ -1,2 +1,4 @@
 # Untracked files:
-/data/tests/sample-value.json
+/data/tests/sample-test.json
+/data/tests/_bdsm-8-value-v4.json
+*.bak
