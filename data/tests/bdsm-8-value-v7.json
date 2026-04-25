@@ -547,7 +547,7 @@
       },
       "scale": {
         "type": "dots",
-        "dots": 7,
+        "dots": 5,
         "pointsPerDot": 1
       },
       "subtitle": {
@@ -585,7 +585,7 @@
       },
       "scale": {
         "type": "dots",
-        "dots": 7,
+        "dots": 5,
         "pointsPerDot": 1
       },
       "subtitle": {
@@ -623,7 +623,7 @@
       },
       "scale": {
         "type": "dots",
-        "dots": 7,
+        "dots": 5,
         "pointsPerDot": 1
       },
       "subtitle": {
@@ -661,7 +661,7 @@
       },
       "scale": {
         "type": "dots",
-        "dots": 7,
+        "dots": 5,
         "pointsPerDot": 1
       },
       "subtitle": {
@@ -699,7 +699,7 @@
       },
       "scale": {
         "type": "dots",
-        "dots": 7,
+        "dots": 5,
         "pointsPerDot": 1
       },
       "subtitle": {
@@ -737,7 +737,7 @@
       },
       "scale": {
         "type": "dots",
-        "dots": 7,
+        "dots": 5,
         "pointsPerDot": 1
       },
       "subtitle": {
@@ -775,7 +775,7 @@
       },
       "scale": {
         "type": "dots",
-        "dots": 7,
+        "dots": 5,
         "pointsPerDot": 1
       },
       "subtitle": {
@@ -813,7 +813,7 @@
       },
       "scale": {
         "type": "dots",
-        "dots": 7,
+        "dots": 5,
         "pointsPerDot": 1
       },
       "subtitle": {
@@ -851,7 +851,7 @@
       },
       "scale": {
         "type": "dots",
-        "dots": 7,
+        "dots": 5,
         "pointsPerDot": 1
       },
       "subtitle": {
@@ -889,7 +889,7 @@
       },
       "scale": {
         "type": "dots",
-        "dots": 7,
+        "dots": 5,
         "pointsPerDot": 1
       },
       "subtitle": {
@@ -927,7 +927,7 @@
       },
       "scale": {
         "type": "dots",
-        "dots": 7,
+        "dots": 5,
         "pointsPerDot": 1
       },
       "subtitle": {
@@ -965,7 +965,7 @@
       },
       "scale": {
         "type": "dots",
-        "dots": 7,
+        "dots": 5,
         "pointsPerDot": 1
       },
       "subtitle": {
@@ -1003,7 +1003,7 @@
       },
       "scale": {
         "type": "dots",
-        "dots": 7,
+        "dots": 5,
         "pointsPerDot": 1
       },
       "subtitle": {
@@ -1041,7 +1041,7 @@
       },
       "scale": {
         "type": "dots",
-        "dots": 7,
+        "dots": 5,
         "pointsPerDot": 1
       },
       "subtitle": {
@@ -1079,7 +1079,7 @@
       },
       "scale": {
         "type": "dots",
-        "dots": 7,
+        "dots": 5,
         "pointsPerDot": 1
       },
       "subtitle": {
@@ -1117,7 +1117,7 @@
       },
       "scale": {
         "type": "dots",
-        "dots": 7,
+        "dots": 5,
         "pointsPerDot": 1
       },
       "subtitle": {
@@ -1155,7 +1155,7 @@
       },
       "scale": {
         "type": "dots",
-        "dots": 7,
+        "dots": 5,
         "pointsPerDot": 1
       },
       "subtitle": {
@@ -1193,7 +1193,7 @@
       },
       "scale": {
         "type": "dots",
-        "dots": 7,
+        "dots": 5,
         "pointsPerDot": 1
       },
       "subtitle": {
@@ -1231,7 +1231,7 @@
       },
       "scale": {
         "type": "dots",
-        "dots": 7,
+        "dots": 5,
         "pointsPerDot": 1
       },
       "subtitle": {
@@ -1269,7 +1269,7 @@
       },
       "scale": {
         "type": "dots",
-        "dots": 7,
+        "dots": 5,
         "pointsPerDot": 1
       },
       "subtitle": {
@@ -1307,7 +1307,7 @@
       },
       "scale": {
         "type": "dots",
-        "dots": 7,
+        "dots": 5,
         "pointsPerDot": 1
       },
       "subtitle": {
@@ -1345,7 +1345,7 @@
       },
       "scale": {
         "type": "dots",
-        "dots": 7,
+        "dots": 5,
         "pointsPerDot": 1
       },
       "subtitle": {
@@ -1383,7 +1383,7 @@
       },
       "scale": {
         "type": "dots",
-        "dots": 7,
+        "dots": 5,
         "pointsPerDot": 1
       },
       "subtitle": {
@@ -1421,7 +1421,7 @@
       },
       "scale": {
         "type": "dots",
-        "dots": 7,
+        "dots": 5,
         "pointsPerDot": 1
       },
       "subtitle": {
@@ -3062,7 +3062,7 @@
       },
       "scale": {
         "type": "dots",
-        "dots": 7,
+        "dots": 5,
         "pointsPerDot": 1
       },
       "subtitle": {
@@ -3341,7 +3341,7 @@
       },
       "scale": {
         "type": "dots",
-        "dots": 7,
+        "dots": 5,
         "pointsPerDot": 1
       },
       "subtitle": {
@@ -3640,7 +3640,7 @@
       },
       "scale": {
         "type": "dots",
-        "dots": 7,
+        "dots": 5,
         "pointsPerDot": 1
       },
       "subtitle": {
@@ -3919,7 +3919,7 @@
       },
       "scale": {
         "type": "dots",
-        "dots": 7,
+        "dots": 5,
         "pointsPerDot": 1
       },
       "subtitle": {

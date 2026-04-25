@@ -2,6 +2,7 @@ const crypto = require("crypto");
 const fs = require("fs");
 const http = require("http");
 const path = require("path");
+const zlib = require("zlib");
 const { URL } = require("url");
 
 const PORT = Number(process.env.PORT || 3000);
@@ -10,6 +11,7 @@ const PUBLIC_DIR = path.join(ROOT, "public");
 const TESTS_DIR = path.join(ROOT, "data", "tests");
 const RESULT_SECRET = process.env.RESULT_SECRET || "change-this-dev-result-secret";
 const RESULT_KEY = crypto.createHash("sha256").update(RESULT_SECRET).digest();
+const RESULT_TOKEN_PREFIX = "v2.";
 const BUILT_IN_COLOR_PAIRS = [
   { left: "#B65F5F", right: "#3C8D73" },
   { left: "#6F6DB2", right: "#D09245" },
@@ -963,14 +965,32 @@ function publicResult(resultPayload, localeOverride) {
 }
 
 function encryptResult(payload) {
+  const json = Buffer.from(JSON.stringify(payload), "utf8");
+  const compressed = zlib.brotliCompressSync(json, {
+    params: {
+      [zlib.constants.BROTLI_PARAM_QUALITY]: 5
+    }
+  });
   const iv = crypto.randomBytes(12);
   const cipher = crypto.createCipheriv("aes-256-gcm", RESULT_KEY, iv);
-  const encrypted = Buffer.concat([cipher.update(JSON.stringify(payload), "utf8"), cipher.final()]);
+  const encrypted = Buffer.concat([cipher.update(compressed), cipher.final()]);
   const tag = cipher.getAuthTag();
-  return Buffer.concat([iv, tag, encrypted]).toString("base64url");
+  return `${RESULT_TOKEN_PREFIX}${Buffer.concat([iv, tag, encrypted]).toString("base64url")}`;
 }
 
 function decryptResult(token) {
+  if (typeof token !== "string" || !token) {
+    throw new Error("Invalid token.");
+  }
+
+  if (token.startsWith(RESULT_TOKEN_PREFIX)) {
+    return decryptCompressedResult(token.slice(RESULT_TOKEN_PREFIX.length));
+  }
+
+  return decryptLegacyResult(token);
+}
+
+function decryptLegacyResult(token) {
   const packed = Buffer.from(token, "base64url");
   if (packed.length < 29) throw new Error("Invalid token.");
   const iv = packed.subarray(0, 12);
@@ -979,6 +999,19 @@ function decryptResult(token) {
   const decipher = crypto.createDecipheriv("aes-256-gcm", RESULT_KEY, iv);
   decipher.setAuthTag(tag);
   return JSON.parse(Buffer.concat([decipher.update(encrypted), decipher.final()]).toString("utf8"));
+}
+
+function decryptCompressedResult(token) {
+  const packed = Buffer.from(token, "base64url");
+  if (packed.length < 29) throw new Error("Invalid token.");
+  const iv = packed.subarray(0, 12);
+  const tag = packed.subarray(12, 28);
+  const encrypted = packed.subarray(28);
+  const decipher = crypto.createDecipheriv("aes-256-gcm", RESULT_KEY, iv);
+  decipher.setAuthTag(tag);
+  const compressed = Buffer.concat([decipher.update(encrypted), decipher.final()]);
+  const json = zlib.brotliDecompressSync(compressed);
+  return JSON.parse(json.toString("utf8"));
 }
 
 function completeSession(session) {
