@@ -1,0 +1,4855 @@
+{
+  "id": "bdsm-8-value",
+  "defaultLocale": "en",
+  "locales": [
+    "en"
+  ],
+  "title": {
+    "en": "BDSM 8-Value Test"
+  },
+  "description": {
+    "en": "A consent-first, adults-only 8values-style BDSM preference test with an entry gate, eight bipolar axes, optional specialty axes, scenario questions, result roles, and badges."
+  },
+  "axes": [
+    {
+      "id": "bdsm_interest",
+      "defaultEnabled": true,
+      "initial": 0,
+      "color": "#6A5ACD",
+      "hideWhenAxesEnabled": [
+        "power",
+        "sensation",
+        "atmosphere",
+        "interaction",
+        "tone",
+        "execution",
+        "focus",
+        "integration"
+      ],
+      "name": {
+        "en": "BDSM Openness"
+      },
+      "leftLabel": {
+        "en": "Not interested"
+      },
+      "rightLabel": {
+        "en": "Curious / interested"
+      }
+    },
+    {
+      "id": "power",
+      "defaultEnabled": false,
+      "initial": 0,
+      "opposition": true,
+      "colors": {
+        "left": "#6B4E71",
+        "right": "#B56576"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      },
+      "name": {
+        "en": "Power"
+      },
+      "leftLabel": {
+        "en": "Dominant"
+      },
+      "rightLabel": {
+        "en": "Submissive"
+      },
+      "description": {
+        "en": "Preference for leading, commanding, and taking responsibility vs. yielding control and following."
+      }
+    },
+    {
+      "id": "sensation",
+      "defaultEnabled": false,
+      "initial": 0,
+      "opposition": true,
+      "colors": {
+        "left": "#7A4E48",
+        "right": "#5D737E"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      },
+      "name": {
+        "en": "Sensation"
+      },
+      "leftLabel": {
+        "en": "Sadistic"
+      },
+      "rightLabel": {
+        "en": "Masochistic"
+      },
+      "description": {
+        "en": "Enjoyment of giving, inflicting, or orchestrating consensual intensity vs. receiving and processing it."
+      }
+    },
+    {
+      "id": "atmosphere",
+      "defaultEnabled": false,
+      "initial": 0,
+      "opposition": true,
+      "colors": {
+        "left": "#406E8E",
+        "right": "#8A5A44"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      },
+      "name": {
+        "en": "Atmosphere"
+      },
+      "leftLabel": {
+        "en": "Protocol"
+      },
+      "rightLabel": {
+        "en": "Primal"
+      },
+      "description": {
+        "en": "Preference for formal rules, titles, and ritualized interactions vs. instinctual, non-verbal, predator/prey energy."
+      }
+    },
+    {
+      "id": "interaction",
+      "defaultEnabled": false,
+      "initial": 0,
+      "opposition": true,
+      "colors": {
+        "left": "#6457A6",
+        "right": "#B06A45"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      },
+      "name": {
+        "en": "Interaction"
+      },
+      "leftLabel": {
+        "en": "Disciplinarian"
+      },
+      "rightLabel": {
+        "en": "Bratty"
+      },
+      "description": {
+        "en": "Preference for enforcing structure and correcting disobedience vs. teasing, resisting, and provoking a reaction."
+      }
+    },
+    {
+      "id": "tone",
+      "defaultEnabled": false,
+      "initial": 0,
+      "opposition": true,
+      "colors": {
+        "left": "#3D7068",
+        "right": "#9A4C60"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      },
+      "name": {
+        "en": "Tone"
+      },
+      "leftLabel": {
+        "en": "Nurturing"
+      },
+      "rightLabel": {
+        "en": "Degrading"
+      },
+      "description": {
+        "en": "Focus on caretaking, praise, and emotional safety vs. consensual humiliation, objectification, and harshness."
+      }
+    },
+    {
+      "id": "execution",
+      "defaultEnabled": false,
+      "initial": 0,
+      "opposition": true,
+      "colors": {
+        "left": "#746D75",
+        "right": "#4E8098"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      },
+      "name": {
+        "en": "Execution"
+      },
+      "leftLabel": {
+        "en": "Ritualistic"
+      },
+      "rightLabel": {
+        "en": "Spontaneous"
+      },
+      "description": {
+        "en": "Preference for planned scenes, scripts, and negotiated steps vs. organic, improvised, fluid escalation."
+      }
+    },
+    {
+      "id": "focus",
+      "defaultEnabled": false,
+      "initial": 0,
+      "opposition": true,
+      "colors": {
+        "left": "#59656F",
+        "right": "#A26769"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      },
+      "name": {
+        "en": "Focus"
+      },
+      "leftLabel": {
+        "en": "Psychological"
+      },
+      "rightLabel": {
+        "en": "Physical"
+      },
+      "description": {
+        "en": "Centered on mind games, anticipation, and power exchange vs. tangible sensation, impact, and restraint."
+      }
+    },
+    {
+      "id": "integration",
+      "defaultEnabled": false,
+      "initial": 0,
+      "opposition": true,
+      "colors": {
+        "left": "#5E6472",
+        "right": "#7D6B91"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      },
+      "name": {
+        "en": "Integration"
+      },
+      "leftLabel": {
+        "en": "Lifestyle"
+      },
+      "rightLabel": {
+        "en": "Compartmentalized"
+      },
+      "description": {
+        "en": "How deeply the dynamic extends into everyday life vs. staying reserved for designated scenes."
+      }
+    },
+    {
+      "id": "exhibitionism",
+      "defaultEnabled": false,
+      "initial": 0,
+      "color": "#8B5E83",
+      "enabledBy": {
+        "any": [
+          {
+            "type": "value",
+            "axisId": "exhibitionism",
+            "op": ">=",
+            "value": 2
+          }
+        ]
+      },
+      "name": {
+        "en": "Audience Drive"
+      },
+      "leftLabel": {
+        "en": "Private"
+      },
+      "rightLabel": {
+        "en": "Audience Drive"
+      },
+      "description": {
+        "en": "Thrill from being perceived by consenting observers or witnessed in appropriate spaces."
+      }
+    },
+    {
+      "id": "non_humanization",
+      "defaultEnabled": false,
+      "initial": 0,
+      "color": "#8B5E83",
+      "enabledBy": {
+        "any": [
+          {
+            "type": "value",
+            "axisId": "non_humanization",
+            "op": ">=",
+            "value": 2
+          }
+        ]
+      },
+      "name": {
+        "en": "Identity Shift"
+      },
+      "leftLabel": {
+        "en": "Human Identity"
+      },
+      "rightLabel": {
+        "en": "Identity Shift"
+      },
+      "description": {
+        "en": "Interest in consensual pet, creature, object, doll, or furniture-like headspaces."
+      }
+    },
+    {
+      "id": "material_fetish",
+      "defaultEnabled": false,
+      "initial": 0,
+      "color": "#8B5E83",
+      "enabledBy": {
+        "any": [
+          {
+            "type": "value",
+            "axisId": "material_fetish",
+            "op": ">=",
+            "value": 2
+          }
+        ]
+      },
+      "name": {
+        "en": "Material / Fetish Catalyst"
+      },
+      "leftLabel": {
+        "en": "Low Gear Reliance"
+      },
+      "rightLabel": {
+        "en": "Material / Fetish Catalyst"
+      },
+      "description": {
+        "en": "Arousal and headspace tied to specific materials, textures, clothing, or gear."
+      }
+    },
+    {
+      "id": "edge_risk",
+      "defaultEnabled": false,
+      "initial": 0,
+      "color": "#8B5E83",
+      "enabledBy": {
+        "any": [
+          {
+            "type": "value",
+            "axisId": "edge_risk",
+            "op": ">=",
+            "value": 2
+          }
+        ]
+      },
+      "name": {
+        "en": "Boundary Push"
+      },
+      "leftLabel": {
+        "en": "Standard Boundaries"
+      },
+      "rightLabel": {
+        "en": "Boundary Push"
+      },
+      "description": {
+        "en": "Interest in fear, CNC fantasy, and intense limits while preserving explicit consent, negotiation, and safewords."
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "entry_bdsm_openness",
+      "type": "scale",
+      "axisId": "bdsm_interest",
+      "relatedAxes": [
+        "bdsm_interest"
+      ],
+      "subtitle": {
+        "en": "Entry point"
+      },
+      "text": {
+        "en": "In a clearly consensual adult scene, how much does the idea of negotiated power exchange, restraint, ritual, or controlled intensity interest you?"
+      },
+      "leftLabel": {
+        "en": "Not for me"
+      },
+      "rightLabel": {
+        "en": "Very curious"
+      },
+      "answers": [
+        {
+          "id": "no",
+          "value": -2,
+          "label": {
+            "en": "Not interested at all"
+          }
+        },
+        {
+          "id": "maybe_no",
+          "value": -1,
+          "label": {
+            "en": "Mostly not interested"
+          }
+        },
+        {
+          "id": "neutral",
+          "value": 0,
+          "label": {
+            "en": "Unsure / neutral"
+          }
+        },
+        {
+          "id": "curious",
+          "value": 1,
+          "label": {
+            "en": "Curious with limits"
+          }
+        },
+        {
+          "id": "yes",
+          "value": 2,
+          "label": {
+            "en": "Interested"
+          }
+        },
+        {
+          "id": "strong_yes",
+          "value": 3,
+          "label": {
+            "en": "Strongly interested"
+          }
+        }
+      ]
+    },
+    {
+      "id": "power_scene_lead",
+      "type": "scale",
+      "axisId": "power",
+      "relatedAxes": [
+        "power"
+      ],
+      "text": {
+        "en": "In a negotiated scene, which role feels more natural to you: yielding to someone else's lead, or setting the pace yourself?"
+      },
+      "leftLabel": {
+        "en": "I prefer to yield"
+      },
+      "rightLabel": {
+        "en": "I prefer to lead"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Power"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "power_responsibility",
+      "type": "scale",
+      "axisId": "power",
+      "relatedAxes": [
+        "power"
+      ],
+      "text": {
+        "en": "Which responsibility style appeals more: being relieved of responsibility, or taking responsibility for another person's experience?"
+      },
+      "leftLabel": {
+        "en": "Avoid responsibility"
+      },
+      "rightLabel": {
+        "en": "Take responsibility"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Power"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "power_commands",
+      "type": "scale",
+      "axisId": "power",
+      "relatedAxes": [
+        "power"
+      ],
+      "text": {
+        "en": "Do you prefer receiving clear commands and permissions, or giving them?"
+      },
+      "leftLabel": {
+        "en": "Receiving commands"
+      },
+      "rightLabel": {
+        "en": "Giving commands"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Power"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "power_aftercare_control",
+      "type": "scale",
+      "axisId": "power",
+      "relatedAxes": [
+        "power"
+      ],
+      "text": {
+        "en": "After a scene, do you prefer being guided and held by someone else's structure, or providing that structure for someone else?"
+      },
+      "leftLabel": {
+        "en": "Be guided after"
+      },
+      "rightLabel": {
+        "en": "Guide after"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Power"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "sensation_orchestrate",
+      "type": "scale",
+      "axisId": "sensation",
+      "relatedAxes": [
+        "sensation"
+      ],
+      "text": {
+        "en": "Which sensation role draws you more: receiving controlled intensity, or orchestrating it for someone else?"
+      },
+      "leftLabel": {
+        "en": "Receive intensity"
+      },
+      "rightLabel": {
+        "en": "Orchestrate intensity"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Sensation"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "sensation_processing",
+      "type": "scale",
+      "axisId": "sensation",
+      "relatedAxes": [
+        "sensation"
+      ],
+      "text": {
+        "en": "In a consensual intensity scene, would you rather create the sensation for someone else, or receive and process it yourself?"
+      },
+      "leftLabel": {
+        "en": "Give intensity"
+      },
+      "rightLabel": {
+        "en": "Receive intensity"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Sensation"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "sensation_feedback",
+      "type": "scale",
+      "axisId": "sensation",
+      "relatedAxes": [
+        "sensation"
+      ],
+      "text": {
+        "en": "When intensity is part of the scene, do you prefer directing how it happens, or experiencing how it lands in your own body and mind?"
+      },
+      "leftLabel": {
+        "en": "Direct the sensation"
+      },
+      "rightLabel": {
+        "en": "Process the sensation"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Sensation"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "sensation_limit",
+      "type": "scale",
+      "axisId": "sensation",
+      "relatedAxes": [
+        "sensation"
+      ],
+      "text": {
+        "en": "Which side of negotiated pain or discomfort appeals more: causing it consensually, or receiving it consensually?"
+      },
+      "leftLabel": {
+        "en": "Cause it consensually"
+      },
+      "rightLabel": {
+        "en": "Receive it consensually"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Sensation"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "atmosphere_titles",
+      "type": "scale",
+      "axisId": "atmosphere",
+      "relatedAxes": [
+        "atmosphere"
+      ],
+      "text": {
+        "en": "Which atmosphere pulls you in more: formal protocol with titles and rules, or primal energy with instinct and pursuit?"
+      },
+      "leftLabel": {
+        "en": "Protocol"
+      },
+      "rightLabel": {
+        "en": "Primal"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Atmosphere"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "atmosphere_instinct",
+      "type": "scale",
+      "axisId": "atmosphere",
+      "relatedAxes": [
+        "atmosphere"
+      ],
+      "text": {
+        "en": "Do you prefer formal ritual and civilized interaction, or instinctive, growling, predator/prey energy?"
+      },
+      "leftLabel": {
+        "en": "Formal ritual"
+      },
+      "rightLabel": {
+        "en": "Instinctive energy"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Atmosphere"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "atmosphere_order",
+      "type": "scale",
+      "axisId": "atmosphere",
+      "relatedAxes": [
+        "atmosphere"
+      ],
+      "text": {
+        "en": "Which scene structure feels more immersive: clear formal order, or feral momentum?"
+      },
+      "leftLabel": {
+        "en": "Formal order"
+      },
+      "rightLabel": {
+        "en": "Feral momentum"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Atmosphere"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "atmosphere_language",
+      "type": "scale",
+      "axisId": "atmosphere",
+      "relatedAxes": [
+        "atmosphere"
+      ],
+      "text": {
+        "en": "When a scene deepens, do you prefer named rules and verbal structure, or body language and animalistic cues?"
+      },
+      "leftLabel": {
+        "en": "Named rules"
+      },
+      "rightLabel": {
+        "en": "Body language"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Atmosphere"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "interaction_correction",
+      "type": "scale",
+      "axisId": "interaction",
+      "relatedAxes": [
+        "interaction"
+      ],
+      "text": {
+        "en": "Which interaction style appeals more: correcting and enforcing consequences, or provoking correction and reaction?"
+      },
+      "leftLabel": {
+        "en": "Correcting"
+      },
+      "rightLabel": {
+        "en": "Provoking"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Interaction"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "interaction_tease",
+      "type": "scale",
+      "axisId": "interaction",
+      "relatedAxes": [
+        "interaction"
+      ],
+      "text": {
+        "en": "Do you prefer enforcing structure, or teasing, resisting, and making someone earn obedience?"
+      },
+      "leftLabel": {
+        "en": "Enforce"
+      },
+      "rightLabel": {
+        "en": "Resist"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Interaction"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "interaction_rules",
+      "type": "scale",
+      "axisId": "interaction",
+      "relatedAxes": [
+        "interaction"
+      ],
+      "text": {
+        "en": "When rules are part of a scene, do you prefer holding someone accountable, or breaking rules playfully to invite a response?"
+      },
+      "leftLabel": {
+        "en": "Hold accountable"
+      },
+      "rightLabel": {
+        "en": "Break playfully"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Interaction"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "interaction_pushback",
+      "type": "scale",
+      "axisId": "interaction",
+      "relatedAxes": [
+        "interaction"
+      ],
+      "text": {
+        "en": "Which dynamic feels more alive to you: smooth compliance, or playful pushback?"
+      },
+      "leftLabel": {
+        "en": "Prefer compliance"
+      },
+      "rightLabel": {
+        "en": "Prefer pushback"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Interaction"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "tone_praise",
+      "type": "scale",
+      "axisId": "tone",
+      "relatedAxes": [
+        "tone"
+      ],
+      "text": {
+        "en": "Which emotional tone feels more powerful in intense play: praise, warmth, and caretaking, or consensual harshness and degradation?"
+      },
+      "leftLabel": {
+        "en": "Nurturing"
+      },
+      "rightLabel": {
+        "en": "Degrading"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Tone"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "tone_harshness",
+      "type": "scale",
+      "axisId": "tone",
+      "relatedAxes": [
+        "tone"
+      ],
+      "text": {
+        "en": "Do you prefer a gentle, emotionally safe tone, or a harsher consensual charge involving humiliation or objectification?"
+      },
+      "leftLabel": {
+        "en": "Gentle safety"
+      },
+      "rightLabel": {
+        "en": "Harsh charge"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Tone"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "tone_repair",
+      "type": "scale",
+      "axisId": "tone",
+      "relatedAxes": [
+        "tone"
+      ],
+      "text": {
+        "en": "When a scene gets intense, do you prefer caretaking and reassurance, or cruelty play contained by consent and aftercare?"
+      },
+      "leftLabel": {
+        "en": "Caretaking"
+      },
+      "rightLabel": {
+        "en": "Cruelty play"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Tone"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "tone_object",
+      "type": "scale",
+      "axisId": "tone",
+      "relatedAxes": [
+        "tone"
+      ],
+      "text": {
+        "en": "Which tone is more compelling: affectionate attention to a person, or consensual objectification as a useful or treasured thing?"
+      },
+      "leftLabel": {
+        "en": "Affectionate tone"
+      },
+      "rightLabel": {
+        "en": "Objectifying tone"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Tone"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "execution_script",
+      "type": "scale",
+      "axisId": "execution",
+      "relatedAxes": [
+        "execution"
+      ],
+      "text": {
+        "en": "Which execution style fits you better: a planned ritual with clear steps, or an improvised flow?"
+      },
+      "leftLabel": {
+        "en": "Planned ritual"
+      },
+      "rightLabel": {
+        "en": "Improvised flow"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Execution"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "execution_surprise",
+      "type": "scale",
+      "axisId": "execution",
+      "relatedAxes": [
+        "execution"
+      ],
+      "text": {
+        "en": "Do you prefer a scripted scene with known beats, or a spontaneous scene that evolves in the moment?"
+      },
+      "leftLabel": {
+        "en": "Scripted"
+      },
+      "rightLabel": {
+        "en": "Spontaneous"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Execution"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "execution_setup",
+      "type": "scale",
+      "axisId": "execution",
+      "relatedAxes": [
+        "execution"
+      ],
+      "text": {
+        "en": "Which opening feels more exciting: ritualized setup with clothing, room, and ceremony, or jumping directly into the moment?"
+      },
+      "leftLabel": {
+        "en": "Ritual setup"
+      },
+      "rightLabel": {
+        "en": "Jump in"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Execution"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "execution_adapt",
+      "type": "scale",
+      "axisId": "execution",
+      "relatedAxes": [
+        "execution"
+      ],
+      "text": {
+        "en": "When a scene is underway, do you prefer following a predetermined plan, or adapting moment by moment?"
+      },
+      "leftLabel": {
+        "en": "Predetermined"
+      },
+      "rightLabel": {
+        "en": "Adaptive"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Execution"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "focus_mindgames",
+      "type": "scale",
+      "axisId": "focus",
+      "relatedAxes": [
+        "focus"
+      ],
+      "text": {
+        "en": "Which focus matters more to you: psychological tension such as permission and denial, or physical sensation and restraint?"
+      },
+      "leftLabel": {
+        "en": "Mind-centered"
+      },
+      "rightLabel": {
+        "en": "Body-centered"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Focus"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "focus_restraint",
+      "type": "scale",
+      "axisId": "focus",
+      "relatedAxes": [
+        "focus"
+      ],
+      "text": {
+        "en": "Do you prefer mind-centered power exchange, or body-centered tools, impact, pressure, and restraint?"
+      },
+      "leftLabel": {
+        "en": "Mental play"
+      },
+      "rightLabel": {
+        "en": "Physical play"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Focus"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "focus_fear",
+      "type": "scale",
+      "axisId": "focus",
+      "relatedAxes": [
+        "focus"
+      ],
+      "text": {
+        "en": "Which core experience draws you more: negotiated fear, suspense, and vulnerability, or direct physical sensation?"
+      },
+      "leftLabel": {
+        "en": "Psychological"
+      },
+      "rightLabel": {
+        "en": "Physical"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Focus"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "focus_touch",
+      "type": "scale",
+      "axisId": "focus",
+      "relatedAxes": [
+        "focus"
+      ],
+      "text": {
+        "en": "To feel immersed, do you prefer mental charge and anticipation, or concrete bodily sensation?"
+      },
+      "leftLabel": {
+        "en": "Mental charge"
+      },
+      "rightLabel": {
+        "en": "Physical charge"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Focus"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "integration_everyday",
+      "type": "scale",
+      "axisId": "integration",
+      "relatedAxes": [
+        "integration"
+      ],
+      "text": {
+        "en": "Where should the dynamic live for you: integrated into everyday routines, or reserved for designated scenes?"
+      },
+      "leftLabel": {
+        "en": "Lifestyle"
+      },
+      "rightLabel": {
+        "en": "Scene-only"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Integration"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "integration_boundary",
+      "type": "scale",
+      "axisId": "integration",
+      "relatedAxes": [
+        "integration"
+      ],
+      "text": {
+        "en": "Do you prefer the dynamic to bleed into everyday life, or switch off clearly when the scene ends?"
+      },
+      "leftLabel": {
+        "en": "Everyday bleed"
+      },
+      "rightLabel": {
+        "en": "Strict container"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Integration"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "integration_protocol_day",
+      "type": "scale",
+      "axisId": "integration",
+      "relatedAxes": [
+        "integration"
+      ],
+      "text": {
+        "en": "Which feels more meaningful: small daily rituals and permissions, or keeping rituals inside scene boundaries?"
+      },
+      "leftLabel": {
+        "en": "Daily ritual"
+      },
+      "rightLabel": {
+        "en": "Scene boundary"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Integration"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "integration_privacy",
+      "type": "scale",
+      "axisId": "integration",
+      "relatedAxes": [
+        "integration"
+      ],
+      "text": {
+        "en": "Do you prefer BDSM as an integrated part of identity and routine, or as a distinct private compartment?"
+      },
+      "leftLabel": {
+        "en": "Integrated"
+      },
+      "rightLabel": {
+        "en": "Compartmentalized"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Integration"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "scene_power_arrival",
+      "type": "choice",
+      "multiSelect": true,
+      "minSelections": 1,
+      "maxSelections": 3,
+      "relatedAxes": [
+        "power",
+        "execution",
+        "atmosphere",
+        "exhibitionism"
+      ],
+      "text": {
+        "en": "A partner arrives and asks, 'What happens now?' Which details fit your fantasy?"
+      },
+      "options": [
+        {
+          "id": "power_plan_order",
+          "label": {
+            "en": "I decide the order of events and give calm instructions"
+          },
+          "effects": [
+            {
+              "axisId": "power",
+              "value": -2
+            },
+            {
+              "axisId": "execution",
+              "value": -1
+            }
+          ]
+        },
+        {
+          "id": "power_wait_permission",
+          "label": {
+            "en": "I wait for permission before moving or speaking"
+          },
+          "effects": [
+            {
+              "axisId": "power",
+              "value": 2
+            },
+            {
+              "axisId": "atmosphere",
+              "value": -1
+            }
+          ]
+        },
+        {
+          "id": "power_switch_negotiation",
+          "label": {
+            "en": "We negotiate who leads this time before starting"
+          },
+          "effects": [
+            {
+              "axisId": "execution",
+              "value": -1
+            }
+          ]
+        },
+        {
+          "id": "power_public_hint",
+          "label": {
+            "en": "The scene includes being subtly witnessed by consenting others"
+          },
+          "effects": [
+            {
+              "axisId": "exhibitionism",
+              "value": 2
+            }
+          ]
+        }
+      ],
+      "subtitle": {
+        "en": "Scenario"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "scene_restraint_room",
+      "type": "choice",
+      "multiSelect": true,
+      "minSelections": 1,
+      "maxSelections": 3,
+      "relatedAxes": [
+        "power",
+        "sensation",
+        "focus",
+        "material_fetish"
+      ],
+      "text": {
+        "en": "In a prepared room, which elements pull you in?"
+      },
+      "options": [
+        {
+          "id": "restraint_director",
+          "label": {
+            "en": "I arrange restraints and monitor reactions"
+          },
+          "effects": [
+            {
+              "axisId": "power",
+              "value": -1
+            },
+            {
+              "axisId": "sensation",
+              "value": -1
+            },
+            {
+              "axisId": "focus",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "restraint_recipient",
+          "label": {
+            "en": "I am restrained and surrender movement"
+          },
+          "effects": [
+            {
+              "axisId": "power",
+              "value": 2
+            },
+            {
+              "axisId": "focus",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "restraint_material",
+          "label": {
+            "en": "Leather, latex, rope, or metal gear is a major part of the appeal"
+          },
+          "effects": [
+            {
+              "axisId": "material_fetish",
+              "value": 2
+            },
+            {
+              "axisId": "execution",
+              "value": -1
+            }
+          ]
+        },
+        {
+          "id": "restraint_no_interest",
+          "label": {
+            "en": "I prefer no restraint in this scene"
+          },
+          "effects": []
+        }
+      ],
+      "subtitle": {
+        "en": "Scenario"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "scene_protocol_primal",
+      "type": "choice",
+      "multiSelect": true,
+      "minSelections": 1,
+      "maxSelections": 3,
+      "relatedAxes": [
+        "atmosphere",
+        "execution",
+        "non_humanization",
+        "tone"
+      ],
+      "text": {
+        "en": "The scene begins at the doorway. What atmosphere feels hottest?"
+      },
+      "options": [
+        {
+          "id": "doorway_protocol",
+          "label": {
+            "en": "Formal greeting, title, posture, and rules"
+          },
+          "effects": [
+            {
+              "axisId": "atmosphere",
+              "value": -2
+            },
+            {
+              "axisId": "execution",
+              "value": -1
+            }
+          ]
+        },
+        {
+          "id": "doorway_primal",
+          "label": {
+            "en": "Circling, chasing, growling, or predator/prey energy"
+          },
+          "effects": [
+            {
+              "axisId": "atmosphere",
+              "value": 2
+            },
+            {
+              "axisId": "execution",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "doorway_pet",
+          "label": {
+            "en": "Dropping into pet, creature, or handler dynamics"
+          },
+          "effects": [
+            {
+              "axisId": "non_humanization",
+              "value": 2
+            },
+            {
+              "axisId": "atmosphere",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "doorway_quiet",
+          "label": {
+            "en": "Quiet eye contact and simple consent check-in"
+          },
+          "effects": [
+            {
+              "axisId": "tone",
+              "value": -1
+            }
+          ]
+        }
+      ],
+      "subtitle": {
+        "en": "Scenario"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "scene_correction_game",
+      "type": "choice",
+      "multiSelect": true,
+      "minSelections": 1,
+      "maxSelections": 3,
+      "relatedAxes": [
+        "interaction",
+        "power",
+        "tone",
+        "exhibitionism"
+      ],
+      "text": {
+        "en": "A rule is broken on purpose. What sounds fun?"
+      },
+      "options": [
+        {
+          "id": "correction_enforce",
+          "label": {
+            "en": "I correct it with structure and consequences"
+          },
+          "effects": [
+            {
+              "axisId": "interaction",
+              "value": -2
+            },
+            {
+              "axisId": "power",
+              "value": -1
+            }
+          ]
+        },
+        {
+          "id": "correction_brat",
+          "label": {
+            "en": "I smirk and push once more to earn a reaction"
+          },
+          "effects": [
+            {
+              "axisId": "interaction",
+              "value": 2
+            },
+            {
+              "axisId": "power",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "correction_laugh",
+          "label": {
+            "en": "We keep it playful and low-stakes"
+          },
+          "effects": [
+            {
+              "axisId": "tone",
+              "value": -1
+            }
+          ]
+        },
+        {
+          "id": "correction_audience",
+          "label": {
+            "en": "The correction happens where trusted consenting friends can see"
+          },
+          "effects": [
+            {
+              "axisId": "exhibitionism",
+              "value": 2
+            },
+            {
+              "axisId": "interaction",
+              "value": -1
+            }
+          ]
+        }
+      ],
+      "subtitle": {
+        "en": "Scenario"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "scene_tone_aftercare",
+      "type": "choice",
+      "multiSelect": true,
+      "minSelections": 1,
+      "maxSelections": 3,
+      "relatedAxes": [
+        "tone",
+        "interaction",
+        "integration",
+        "non_humanization"
+      ],
+      "text": {
+        "en": "After a heavy moment, what tone do you crave?"
+      },
+      "options": [
+        {
+          "id": "tone_praise_blanket",
+          "label": {
+            "en": "Praise, water, blankets, and reassurance"
+          },
+          "effects": [
+            {
+              "axisId": "tone",
+              "value": -2
+            }
+          ]
+        },
+        {
+          "id": "tone_useful_object",
+          "label": {
+            "en": "Being called useful, owned, or object-like within negotiated limits"
+          },
+          "effects": [
+            {
+              "axisId": "tone",
+              "value": 2
+            },
+            {
+              "axisId": "non_humanization",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "tone_teasing_debrief",
+          "label": {
+            "en": "A teasing debrief that keeps the power dynamic alive"
+          },
+          "effects": [
+            {
+              "axisId": "interaction",
+              "value": 1
+            },
+            {
+              "axisId": "integration",
+              "value": -1
+            }
+          ]
+        },
+        {
+          "id": "tone_silent_cuddle",
+          "label": {
+            "en": "Quiet grounding without much language"
+          },
+          "effects": [
+            {
+              "axisId": "atmosphere",
+              "value": 1
+            },
+            {
+              "axisId": "tone",
+              "value": -1
+            }
+          ]
+        }
+      ],
+      "subtitle": {
+        "en": "Scenario"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "scene_planning_style",
+      "type": "choice",
+      "multiSelect": true,
+      "minSelections": 1,
+      "maxSelections": 3,
+      "relatedAxes": [
+        "execution",
+        "atmosphere",
+        "material_fetish",
+        "edge_risk",
+        "focus"
+      ],
+      "text": {
+        "en": "You have a free evening for a scene. What preparation appeals?"
+      },
+      "options": [
+        {
+          "id": "plan_checklist",
+          "label": {
+            "en": "A checklist, script, safewords, and staged progression"
+          },
+          "effects": [
+            {
+              "axisId": "execution",
+              "value": -2
+            },
+            {
+              "axisId": "atmosphere",
+              "value": -1
+            }
+          ]
+        },
+        {
+          "id": "plan_moodflow",
+          "label": {
+            "en": "Start with a mood and let it evolve"
+          },
+          "effects": [
+            {
+              "axisId": "execution",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "id": "plan_costume_material",
+          "label": {
+            "en": "Specific outfit, hood, gloves, boots, or texture is essential"
+          },
+          "effects": [
+            {
+              "axisId": "material_fetish",
+              "value": 2
+            },
+            {
+              "axisId": "execution",
+              "value": -1
+            }
+          ]
+        },
+        {
+          "id": "plan_edge_brief",
+          "label": {
+            "en": "A serious risk-aware negotiation before a darker fantasy"
+          },
+          "effects": [
+            {
+              "axisId": "edge_risk",
+              "value": 2
+            },
+            {
+              "axisId": "focus",
+              "value": -1
+            }
+          ]
+        }
+      ],
+      "subtitle": {
+        "en": "Scenario"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "scene_mind_body",
+      "type": "choice",
+      "multiSelect": true,
+      "minSelections": 1,
+      "maxSelections": 3,
+      "relatedAxes": [
+        "focus",
+        "power",
+        "sensation",
+        "edge_risk",
+        "material_fetish"
+      ],
+      "text": {
+        "en": "Which scene premise fits best?"
+      },
+      "options": [
+        {
+          "id": "mind_permission",
+          "label": {
+            "en": "Permission, denial, fear, or obedience does most of the work"
+          },
+          "effects": [
+            {
+              "axisId": "focus",
+              "value": -2
+            },
+            {
+              "axisId": "power",
+              "value": -1
+            }
+          ]
+        },
+        {
+          "id": "body_sensation",
+          "label": {
+            "en": "Impact, pressure, restraint, or texture does most of the work"
+          },
+          "effects": [
+            {
+              "axisId": "focus",
+              "value": 2
+            },
+            {
+              "axisId": "sensation",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "mind_cnc_fantasy",
+          "label": {
+            "en": "A consensual non-consent fantasy with clear negotiation and safewords"
+          },
+          "effects": [
+            {
+              "axisId": "edge_risk",
+              "value": 2
+            },
+            {
+              "axisId": "focus",
+              "value": -2
+            }
+          ]
+        },
+        {
+          "id": "body_material",
+          "label": {
+            "en": "The feel and smell of gear/material matters as much as the action"
+          },
+          "effects": [
+            {
+              "axisId": "material_fetish",
+              "value": 2
+            },
+            {
+              "axisId": "focus",
+              "value": 1
+            }
+          ]
+        }
+      ],
+      "subtitle": {
+        "en": "Scenario"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "scene_daily_dynamic",
+      "type": "choice",
+      "multiSelect": true,
+      "minSelections": 1,
+      "maxSelections": 3,
+      "relatedAxes": [
+        "integration",
+        "atmosphere",
+        "non_humanization"
+      ],
+      "text": {
+        "en": "Outside the bedroom, which extensions sound appealing?"
+      },
+      "options": [
+        {
+          "id": "daily_protocol",
+          "label": {
+            "en": "Small daily rules, titles, or service rituals"
+          },
+          "effects": [
+            {
+              "axisId": "integration",
+              "value": -2
+            },
+            {
+              "axisId": "atmosphere",
+              "value": -1
+            }
+          ]
+        },
+        {
+          "id": "scene_container",
+          "label": {
+            "en": "No bleed-over; scenes start and end clearly"
+          },
+          "effects": [
+            {
+              "axisId": "integration",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "id": "daily_pet",
+          "label": {
+            "en": "Temporary pet/object role in private domestic moments"
+          },
+          "effects": [
+            {
+              "axisId": "non_humanization",
+              "value": 2
+            },
+            {
+              "axisId": "integration",
+              "value": -1
+            }
+          ]
+        },
+        {
+          "id": "daily_none",
+          "label": {
+            "en": "Keep everything casual until explicitly negotiated"
+          },
+          "effects": [
+            {
+              "axisId": "integration",
+              "value": 1
+            }
+          ]
+        }
+      ],
+      "subtitle": {
+        "en": "Scenario"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "scene_sensation_choice",
+      "type": "choice",
+      "multiSelect": true,
+      "minSelections": 1,
+      "maxSelections": 3,
+      "relatedAxes": [
+        "sensation",
+        "power",
+        "edge_risk",
+        "focus",
+        "tone"
+      ],
+      "text": {
+        "en": "Which kind of controlled intensity sounds most interesting?"
+      },
+      "options": [
+        {
+          "id": "sensation_giving",
+          "label": {
+            "en": "Giving or directing intensity while reading feedback"
+          },
+          "effects": [
+            {
+              "axisId": "sensation",
+              "value": -2
+            },
+            {
+              "axisId": "power",
+              "value": -1
+            }
+          ]
+        },
+        {
+          "id": "sensation_receiving",
+          "label": {
+            "en": "Receiving intensity and riding the sensations"
+          },
+          "effects": [
+            {
+              "axisId": "sensation",
+              "value": 2
+            },
+            {
+              "axisId": "power",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "sensation_fear",
+          "label": {
+            "en": "Fear and suspense more than pain itself"
+          },
+          "effects": [
+            {
+              "axisId": "edge_risk",
+              "value": 1
+            },
+            {
+              "axisId": "focus",
+              "value": -1
+            }
+          ]
+        },
+        {
+          "id": "sensation_soft",
+          "label": {
+            "en": "Soft intensity and nurturing contact"
+          },
+          "effects": [
+            {
+              "axisId": "tone",
+              "value": -2
+            }
+          ]
+        }
+      ],
+      "subtitle": {
+        "en": "Scenario"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "scene_group_space",
+      "type": "choice",
+      "multiSelect": true,
+      "minSelections": 1,
+      "maxSelections": 3,
+      "relatedAxes": [
+        "exhibitionism",
+        "power",
+        "atmosphere",
+        "integration"
+      ],
+      "text": {
+        "en": "In a kink event or dungeon, what attracts you?"
+      },
+      "options": [
+        {
+          "id": "group_watch",
+          "label": {
+            "en": "Watching other consenting adults scene respectfully"
+          },
+          "effects": [
+            {
+              "axisId": "exhibitionism",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "group_be_seen",
+          "label": {
+            "en": "Being watched or displayed by consenting observers"
+          },
+          "effects": [
+            {
+              "axisId": "exhibitionism",
+              "value": 3
+            },
+            {
+              "axisId": "power",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "group_private_corner",
+          "label": {
+            "en": "Only private rooms or one-on-one scenes"
+          },
+          "effects": [
+            {
+              "axisId": "exhibitionism",
+              "value": -1
+            }
+          ]
+        },
+        {
+          "id": "group_protocol",
+          "label": {
+            "en": "Formal etiquette, collars, titles, and house rules"
+          },
+          "effects": [
+            {
+              "axisId": "atmosphere",
+              "value": -2
+            },
+            {
+              "axisId": "integration",
+              "value": -1
+            }
+          ]
+        }
+      ],
+      "subtitle": {
+        "en": "Scenario"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "scene_identity_shift",
+      "type": "choice",
+      "multiSelect": true,
+      "minSelections": 1,
+      "maxSelections": 3,
+      "relatedAxes": [
+        "non_humanization",
+        "atmosphere",
+        "tone"
+      ],
+      "text": {
+        "en": "Which role-shift premise intrigues you?"
+      },
+      "options": [
+        {
+          "id": "identity_pet",
+          "label": {
+            "en": "Pet, handler, leash, crate, or training language"
+          },
+          "effects": [
+            {
+              "axisId": "non_humanization",
+              "value": 3
+            },
+            {
+              "axisId": "atmosphere",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "identity_object",
+          "label": {
+            "en": "Doll, furniture, statue, drone, or useful-object headspace"
+          },
+          "effects": [
+            {
+              "axisId": "non_humanization",
+              "value": 3
+            },
+            {
+              "axisId": "tone",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "id": "identity_human_only",
+          "label": {
+            "en": "I prefer staying fully human and conversational"
+          },
+          "effects": [
+            {
+              "axisId": "non_humanization",
+              "value": -1
+            },
+            {
+              "axisId": "atmosphere",
+              "value": -1
+            }
+          ]
+        },
+        {
+          "id": "identity_primal",
+          "label": {
+            "en": "Feral creature or prey/predator energy"
+          },
+          "effects": [
+            {
+              "axisId": "non_humanization",
+              "value": 2
+            },
+            {
+              "axisId": "atmosphere",
+              "value": 2
+            }
+          ]
+        }
+      ],
+      "subtitle": {
+        "en": "Scenario"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "scene_gear_catalyst",
+      "type": "choice",
+      "multiSelect": true,
+      "minSelections": 1,
+      "maxSelections": 3,
+      "relatedAxes": [
+        "material_fetish",
+        "focus",
+        "exhibitionism"
+      ],
+      "text": {
+        "en": "Which object detail changes the whole scene?"
+      },
+      "options": [
+        {
+          "id": "gear_latex",
+          "label": {
+            "en": "Latex, rubber, leather, nylon, or uniforms unlock the headspace"
+          },
+          "effects": [
+            {
+              "axisId": "material_fetish",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "id": "gear_restraining_tools",
+          "label": {
+            "en": "Cuffs, rope, collars, hoods, or restraints are central"
+          },
+          "effects": [
+            {
+              "axisId": "material_fetish",
+              "value": 2
+            },
+            {
+              "axisId": "focus",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "gear_minimal",
+          "label": {
+            "en": "No special gear; the dynamic is enough"
+          },
+          "effects": [
+            {
+              "axisId": "material_fetish",
+              "value": -1
+            },
+            {
+              "axisId": "focus",
+              "value": -1
+            }
+          ]
+        },
+        {
+          "id": "gear_display",
+          "label": {
+            "en": "The outfit matters partly because someone might see it"
+          },
+          "effects": [
+            {
+              "axisId": "material_fetish",
+              "value": 2
+            },
+            {
+              "axisId": "exhibitionism",
+              "value": 2
+            }
+          ]
+        }
+      ],
+      "subtitle": {
+        "en": "Scenario"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "scene_boundary_fantasy",
+      "type": "choice",
+      "multiSelect": true,
+      "minSelections": 1,
+      "maxSelections": 3,
+      "relatedAxes": [
+        "edge_risk",
+        "execution",
+        "atmosphere",
+        "focus",
+        "sensation"
+      ],
+      "text": {
+        "en": "Which darker-fantasy frame is closest to your interest?"
+      },
+      "options": [
+        {
+          "id": "edge_none",
+          "label": {
+            "en": "I prefer scenes without fear or risk-play themes"
+          },
+          "effects": [
+            {
+              "axisId": "edge_risk",
+              "value": -1
+            }
+          ]
+        },
+        {
+          "id": "edge_scripted_cnc",
+          "label": {
+            "en": "A scripted CNC-style fantasy with explicit negotiation"
+          },
+          "effects": [
+            {
+              "axisId": "edge_risk",
+              "value": 3
+            },
+            {
+              "axisId": "execution",
+              "value": -1
+            }
+          ]
+        },
+        {
+          "id": "edge_fear_chase",
+          "label": {
+            "en": "Fear, chase, capture, or interrogation energy"
+          },
+          "effects": [
+            {
+              "axisId": "edge_risk",
+              "value": 2
+            },
+            {
+              "axisId": "atmosphere",
+              "value": 1
+            },
+            {
+              "axisId": "focus",
+              "value": -1
+            }
+          ]
+        },
+        {
+          "id": "edge_extreme_limits",
+          "label": {
+            "en": "Exploring limits carefully, with aftercare and hard boundaries"
+          },
+          "effects": [
+            {
+              "axisId": "edge_risk",
+              "value": 2
+            },
+            {
+              "axisId": "sensation",
+              "value": 1
+            }
+          ]
+        }
+      ],
+      "subtitle": {
+        "en": "Scenario"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "scene_service_exchange",
+      "type": "choice",
+      "multiSelect": true,
+      "minSelections": 1,
+      "maxSelections": 3,
+      "relatedAxes": [
+        "power",
+        "interaction",
+        "tone",
+        "integration",
+        "non_humanization"
+      ],
+      "text": {
+        "en": "A service dynamic appears. What fits?"
+      },
+      "options": [
+        {
+          "id": "service_receive",
+          "label": {
+            "en": "I receive service and set standards"
+          },
+          "effects": [
+            {
+              "axisId": "power",
+              "value": -2
+            },
+            {
+              "axisId": "interaction",
+              "value": -1
+            }
+          ]
+        },
+        {
+          "id": "service_offer",
+          "label": {
+            "en": "I offer service and enjoy being evaluated"
+          },
+          "effects": [
+            {
+              "axisId": "power",
+              "value": 2
+            },
+            {
+              "axisId": "interaction",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "service_nurture",
+          "label": {
+            "en": "The service is caring, domestic, and affectionate"
+          },
+          "effects": [
+            {
+              "axisId": "tone",
+              "value": -2
+            },
+            {
+              "axisId": "integration",
+              "value": -1
+            }
+          ]
+        },
+        {
+          "id": "service_object",
+          "label": {
+            "en": "The service includes useful-object or furniture-like positioning"
+          },
+          "effects": [
+            {
+              "axisId": "non_humanization",
+              "value": 2
+            },
+            {
+              "axisId": "tone",
+              "value": 2
+            }
+          ]
+        }
+      ],
+      "subtitle": {
+        "en": "Scenario"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "scene_language_charge",
+      "type": "choice",
+      "multiSelect": true,
+      "minSelections": 1,
+      "maxSelections": 3,
+      "relatedAxes": [
+        "tone",
+        "atmosphere",
+        "power"
+      ],
+      "text": {
+        "en": "Which language style has the strongest pull?"
+      },
+      "options": [
+        {
+          "id": "language_praise",
+          "label": {
+            "en": "Good, treasured, proud, cared-for language"
+          },
+          "effects": [
+            {
+              "axisId": "tone",
+              "value": -2
+            }
+          ]
+        },
+        {
+          "id": "language_degrade",
+          "label": {
+            "en": "Consensual harsh, humiliating, or objectifying language"
+          },
+          "effects": [
+            {
+              "axisId": "tone",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "id": "language_titles",
+          "label": {
+            "en": "Titles, protocols, and formal permissions"
+          },
+          "effects": [
+            {
+              "axisId": "atmosphere",
+              "value": -2
+            },
+            {
+              "axisId": "power",
+              "value": -1
+            }
+          ]
+        },
+        {
+          "id": "language_nonverbal",
+          "label": {
+            "en": "Less talking; posture, sound, and instinct carry it"
+          },
+          "effects": [
+            {
+              "axisId": "atmosphere",
+              "value": 2
+            }
+          ]
+        }
+      ],
+      "subtitle": {
+        "en": "Scenario"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "scene_end_container",
+      "type": "choice",
+      "multiSelect": true,
+      "minSelections": 1,
+      "maxSelections": 3,
+      "relatedAxes": [
+        "execution",
+        "atmosphere",
+        "tone",
+        "integration"
+      ],
+      "text": {
+        "en": "How should the scene end?"
+      },
+      "options": [
+        {
+          "id": "end_formal_close",
+          "label": {
+            "en": "A formal closing ritual and debrief"
+          },
+          "effects": [
+            {
+              "axisId": "execution",
+              "value": -2
+            },
+            {
+              "axisId": "atmosphere",
+              "value": -1
+            }
+          ]
+        },
+        {
+          "id": "end_collapse",
+          "label": {
+            "en": "Collapse naturally into aftercare without ceremony"
+          },
+          "effects": [
+            {
+              "axisId": "execution",
+              "value": 2
+            },
+            {
+              "axisId": "tone",
+              "value": -1
+            }
+          ]
+        },
+        {
+          "id": "end_continue_dynamic",
+          "label": {
+            "en": "The dynamic lingers into the rest of the day"
+          },
+          "effects": [
+            {
+              "axisId": "integration",
+              "value": -2
+            }
+          ]
+        },
+        {
+          "id": "end_clear_reset",
+          "label": {
+            "en": "Clear reset: names, roles, and rules return to normal"
+          },
+          "effects": [
+            {
+              "axisId": "integration",
+              "value": 2
+            }
+          ]
+        }
+      ],
+      "subtitle": {
+        "en": "Scenario"
+      },
+      "enabledBy": {
+        "type": "answer",
+        "questionId": "entry_bdsm_openness",
+        "answerIds": [
+          "curious",
+          "yes",
+          "strong_yes"
+        ]
+      }
+    },
+    {
+      "id": "exh_scale_seen",
+      "type": "scale",
+      "axisId": "exhibitionism",
+      "relatedAxes": [
+        "exhibitionism"
+      ],
+      "text": {
+        "en": "Which privacy level fits you better: strictly private play, or being seen by consenting others?"
+      },
+      "leftLabel": {
+        "en": "Strictly private"
+      },
+      "rightLabel": {
+        "en": "Being seen"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Audience Drive"
+      },
+      "enabledBy": {
+        "any": [
+          {
+            "type": "value",
+            "axisId": "exhibitionism",
+            "op": ">=",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "exh_scale_display",
+      "type": "scale",
+      "axisId": "exhibitionism",
+      "relatedAxes": [
+        "exhibitionism"
+      ],
+      "text": {
+        "en": "Do you prefer no display element, or display, posing, or being shown off to consenting viewers?"
+      },
+      "leftLabel": {
+        "en": "No display"
+      },
+      "rightLabel": {
+        "en": "Display"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Audience Drive"
+      },
+      "enabledBy": {
+        "any": [
+          {
+            "type": "value",
+            "axisId": "exhibitionism",
+            "op": ">=",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "exh_scale_subtle",
+      "type": "scale",
+      "axisId": "exhibitionism",
+      "relatedAxes": [
+        "exhibitionism"
+      ],
+      "text": {
+        "en": "Which boundary feels more appealing: no public-coded edge, or subtle legal, consensual, discreet public-coded tension?"
+      },
+      "leftLabel": {
+        "en": "No public edge"
+      },
+      "rightLabel": {
+        "en": "Subtle public edge"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Audience Drive"
+      },
+      "enabledBy": {
+        "any": [
+          {
+            "type": "value",
+            "axisId": "exhibitionism",
+            "op": ">=",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "exh_scene_stage",
+      "type": "choice",
+      "multiSelect": true,
+      "minSelections": 1,
+      "maxSelections": 3,
+      "relatedAxes": [
+        "exhibitionism"
+      ],
+      "text": {
+        "en": "In a venue with consenting observers, what part feels charged?"
+      },
+      "options": [
+        {
+          "id": "exh_stage_be_displayed",
+          "label": {
+            "en": "Being displayed, posed, or presented"
+          },
+          "effects": [
+            {
+              "axisId": "exhibitionism",
+              "value": 2
+            },
+            {
+              "axisId": "power",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "exh_stage_direct_display",
+          "label": {
+            "en": "Displaying a partner with pride and control"
+          },
+          "effects": [
+            {
+              "axisId": "exhibitionism",
+              "value": 2
+            },
+            {
+              "axisId": "power",
+              "value": -1
+            }
+          ]
+        },
+        {
+          "id": "exh_stage_watch_only",
+          "label": {
+            "en": "Watching respectfully from the edge"
+          },
+          "effects": [
+            {
+              "axisId": "exhibitionism",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "exh_stage_private",
+          "label": {
+            "en": "Leaving for a private room"
+          },
+          "effects": [
+            {
+              "axisId": "exhibitionism",
+              "value": -1
+            }
+          ]
+        }
+      ],
+      "subtitle": {
+        "en": "Audience Drive"
+      },
+      "enabledBy": {
+        "any": [
+          {
+            "type": "value",
+            "axisId": "exhibitionism",
+            "op": ">=",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "exh_scene_visibility",
+      "type": "choice",
+      "multiSelect": true,
+      "minSelections": 1,
+      "maxSelections": 3,
+      "relatedAxes": [
+        "exhibitionism"
+      ],
+      "text": {
+        "en": "Which visibility level fits best?"
+      },
+      "options": [
+        {
+          "id": "exh_visibility_none",
+          "label": {
+            "en": "Only behind closed doors"
+          },
+          "effects": [
+            {
+              "axisId": "exhibitionism",
+              "value": -2
+            }
+          ]
+        },
+        {
+          "id": "exh_visibility_subtle",
+          "label": {
+            "en": "Subtle hints in appropriate adult spaces"
+          },
+          "effects": [
+            {
+              "axisId": "exhibitionism",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "exh_visibility_dungeon",
+          "label": {
+            "en": "Dungeon/event visibility with consent"
+          },
+          "effects": [
+            {
+              "axisId": "exhibitionism",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "id": "exh_visibility_performance",
+          "label": {
+            "en": "A deliberate performance energy"
+          },
+          "effects": [
+            {
+              "axisId": "exhibitionism",
+              "value": 3
+            }
+          ]
+        }
+      ],
+      "subtitle": {
+        "en": "Audience Drive"
+      },
+      "enabledBy": {
+        "any": [
+          {
+            "type": "value",
+            "axisId": "exhibitionism",
+            "op": ">=",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "nh_scale_pet",
+      "type": "scale",
+      "axisId": "non_humanization",
+      "relatedAxes": [
+        "non_humanization"
+      ],
+      "text": {
+        "en": "Which identity state feels closer: keeping ordinary human identity emphasized, or entering creature/pet headspace?"
+      },
+      "leftLabel": {
+        "en": "Human identity"
+      },
+      "rightLabel": {
+        "en": "Creature/pet"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Identity Shift"
+      },
+      "enabledBy": {
+        "any": [
+          {
+            "type": "value",
+            "axisId": "non_humanization",
+            "op": ">=",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "nh_scale_object",
+      "type": "scale",
+      "axisId": "non_humanization",
+      "relatedAxes": [
+        "non_humanization"
+      ],
+      "text": {
+        "en": "Do you prefer personhood being emphasized, or consensual object, doll, furniture, statue, or tool headspace?"
+      },
+      "leftLabel": {
+        "en": "Personhood emphasized"
+      },
+      "rightLabel": {
+        "en": "Object headspace"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Identity Shift"
+      },
+      "enabledBy": {
+        "any": [
+          {
+            "type": "value",
+            "axisId": "non_humanization",
+            "op": ">=",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "nh_scale_speech",
+      "type": "scale",
+      "axisId": "non_humanization",
+      "relatedAxes": [
+        "non_humanization"
+      ],
+      "text": {
+        "en": "Which role boundary appeals more: full ordinary speech and name, or temporarily limited speech/name inside the role?"
+      },
+      "leftLabel": {
+        "en": "Full speech/name"
+      },
+      "rightLabel": {
+        "en": "Role-limited identity"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Identity Shift"
+      },
+      "enabledBy": {
+        "any": [
+          {
+            "type": "value",
+            "axisId": "non_humanization",
+            "op": ">=",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "nh_scene_role",
+      "type": "choice",
+      "multiSelect": true,
+      "minSelections": 1,
+      "maxSelections": 3,
+      "relatedAxes": [
+        "non_humanization"
+      ],
+      "text": {
+        "en": "Which identity-shift role has pull?"
+      },
+      "options": [
+        {
+          "id": "nh_role_pet",
+          "label": {
+            "en": "Pet or creature"
+          },
+          "effects": [
+            {
+              "axisId": "non_humanization",
+              "value": 2
+            },
+            {
+              "axisId": "atmosphere",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "nh_role_doll",
+          "label": {
+            "en": "Doll or mannequin"
+          },
+          "effects": [
+            {
+              "axisId": "non_humanization",
+              "value": 2
+            },
+            {
+              "axisId": "tone",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "id": "nh_role_furniture",
+          "label": {
+            "en": "Furniture or useful object"
+          },
+          "effects": [
+            {
+              "axisId": "non_humanization",
+              "value": 3
+            },
+            {
+              "axisId": "tone",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "id": "nh_role_none",
+          "label": {
+            "en": "Stay fully human"
+          },
+          "effects": [
+            {
+              "axisId": "non_humanization",
+              "value": -2
+            }
+          ]
+        }
+      ],
+      "subtitle": {
+        "en": "Identity Shift"
+      },
+      "enabledBy": {
+        "any": [
+          {
+            "type": "value",
+            "axisId": "non_humanization",
+            "op": ">=",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "nh_scene_handler",
+      "type": "choice",
+      "multiSelect": true,
+      "minSelections": 1,
+      "maxSelections": 3,
+      "relatedAxes": [
+        "non_humanization"
+      ],
+      "text": {
+        "en": "What makes the role work?"
+      },
+      "options": [
+        {
+          "id": "nh_handler_training",
+          "label": {
+            "en": "Training, commands, and rewards"
+          },
+          "effects": [
+            {
+              "axisId": "non_humanization",
+              "value": 2
+            },
+            {
+              "axisId": "interaction",
+              "value": -1
+            }
+          ]
+        },
+        {
+          "id": "nh_handler_silence",
+          "label": {
+            "en": "Reduced speech and simplified responses"
+          },
+          "effects": [
+            {
+              "axisId": "non_humanization",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "id": "nh_handler_costume",
+          "label": {
+            "en": "Mask, hood, ears, tail, or uniform"
+          },
+          "effects": [
+            {
+              "axisId": "non_humanization",
+              "value": 1
+            },
+            {
+              "axisId": "material_fetish",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "nh_handler_care",
+          "label": {
+            "en": "Affectionate caretaking while in role"
+          },
+          "effects": [
+            {
+              "axisId": "non_humanization",
+              "value": 1
+            },
+            {
+              "axisId": "tone",
+              "value": -2
+            }
+          ]
+        }
+      ],
+      "subtitle": {
+        "en": "Identity Shift"
+      },
+      "enabledBy": {
+        "any": [
+          {
+            "type": "value",
+            "axisId": "non_humanization",
+            "op": ">=",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "fet_scale_material",
+      "type": "scale",
+      "axisId": "material_fetish",
+      "relatedAxes": [
+        "material_fetish"
+      ],
+      "text": {
+        "en": "How central are materials such as latex, leather, nylon, rubber, rope, or metal: optional texture, or essential catalyst?"
+      },
+      "leftLabel": {
+        "en": "Optional texture"
+      },
+      "rightLabel": {
+        "en": "Essential material"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Material Catalyst"
+      },
+      "enabledBy": {
+        "any": [
+          {
+            "type": "value",
+            "axisId": "material_fetish",
+            "op": ">=",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "fet_scale_gear",
+      "type": "scale",
+      "axisId": "material_fetish",
+      "relatedAxes": [
+        "material_fetish"
+      ],
+      "text": {
+        "en": "Which unlocks headspace more for you: the dynamic alone, or specific gear and equipment?"
+      },
+      "leftLabel": {
+        "en": "Dynamic alone"
+      },
+      "rightLabel": {
+        "en": "Gear unlocks it"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Material Catalyst"
+      },
+      "enabledBy": {
+        "any": [
+          {
+            "type": "value",
+            "axisId": "material_fetish",
+            "op": ">=",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "fet_scale_uniform",
+      "type": "scale",
+      "axisId": "material_fetish",
+      "relatedAxes": [
+        "material_fetish"
+      ],
+      "text": {
+        "en": "How important are uniforms, hoods, collars, gloves, boots, or masks: not important, or very important?"
+      },
+      "leftLabel": {
+        "en": "Not important"
+      },
+      "rightLabel": {
+        "en": "Very important"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Material Catalyst"
+      },
+      "enabledBy": {
+        "any": [
+          {
+            "type": "value",
+            "axisId": "material_fetish",
+            "op": ">=",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "fet_scene_material",
+      "type": "choice",
+      "multiSelect": true,
+      "minSelections": 1,
+      "maxSelections": 3,
+      "relatedAxes": [
+        "material_fetish"
+      ],
+      "text": {
+        "en": "Which material detail matters most?"
+      },
+      "options": [
+        {
+          "id": "fet_mat_latex",
+          "label": {
+            "en": "Latex/rubber shine and compression"
+          },
+          "effects": [
+            {
+              "axisId": "material_fetish",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "id": "fet_mat_leather",
+          "label": {
+            "en": "Leather structure, scent, and authority"
+          },
+          "effects": [
+            {
+              "axisId": "material_fetish",
+              "value": 2
+            },
+            {
+              "axisId": "atmosphere",
+              "value": -1
+            }
+          ]
+        },
+        {
+          "id": "fet_mat_nylon",
+          "label": {
+            "en": "Nylon, stockings, gloves, or uniform texture"
+          },
+          "effects": [
+            {
+              "axisId": "material_fetish",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "id": "fet_mat_rope",
+          "label": {
+            "en": "Rope, cuffs, metal, or restraint hardware"
+          },
+          "effects": [
+            {
+              "axisId": "material_fetish",
+              "value": 2
+            },
+            {
+              "axisId": "focus",
+              "value": 1
+            }
+          ]
+        }
+      ],
+      "subtitle": {
+        "en": "Material Catalyst"
+      },
+      "enabledBy": {
+        "any": [
+          {
+            "type": "value",
+            "axisId": "material_fetish",
+            "op": ">=",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "fet_scene_requirement",
+      "type": "choice",
+      "multiSelect": true,
+      "minSelections": 1,
+      "maxSelections": 3,
+      "relatedAxes": [
+        "material_fetish"
+      ],
+      "text": {
+        "en": "How required is the object or outfit?"
+      },
+      "options": [
+        {
+          "id": "fet_req_optional",
+          "label": {
+            "en": "Nice but optional"
+          },
+          "effects": [
+            {
+              "axisId": "material_fetish",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "id": "fet_req_boost",
+          "label": {
+            "en": "It strongly boosts the scene"
+          },
+          "effects": [
+            {
+              "axisId": "material_fetish",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "fet_req_unlock",
+          "label": {
+            "en": "It unlocks the headspace"
+          },
+          "effects": [
+            {
+              "axisId": "material_fetish",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "id": "fet_req_dynamic_first",
+          "label": {
+            "en": "The dynamic matters more than any object"
+          },
+          "effects": [
+            {
+              "axisId": "material_fetish",
+              "value": -1
+            }
+          ]
+        }
+      ],
+      "subtitle": {
+        "en": "Material Catalyst"
+      },
+      "enabledBy": {
+        "any": [
+          {
+            "type": "value",
+            "axisId": "material_fetish",
+            "op": ">=",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge_scale_fear",
+      "type": "scale",
+      "axisId": "edge_risk",
+      "relatedAxes": [
+        "edge_risk"
+      ],
+      "text": {
+        "en": "Which intensity level interests you more: no fear play, or negotiated fear/suspense with a solid real safety structure?"
+      },
+      "leftLabel": {
+        "en": "No fear play"
+      },
+      "rightLabel": {
+        "en": "Fear play"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Boundary Push"
+      },
+      "enabledBy": {
+        "any": [
+          {
+            "type": "value",
+            "axisId": "edge_risk",
+            "op": ">=",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge_scale_cnc",
+      "type": "scale",
+      "axisId": "edge_risk",
+      "relatedAxes": [
+        "edge_risk"
+      ],
+      "text": {
+        "en": "Which boundary fits you better: no CNC fantasy, or CNC fantasy with explicit prior consent, boundaries, and safewords?"
+      },
+      "leftLabel": {
+        "en": "No CNC fantasy"
+      },
+      "rightLabel": {
+        "en": "CNC fantasy"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Boundary Push"
+      },
+      "enabledBy": {
+        "any": [
+          {
+            "type": "value",
+            "axisId": "edge_risk",
+            "op": ">=",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge_scale_limits",
+      "type": "scale",
+      "axisId": "edge_risk",
+      "relatedAxes": [
+        "edge_risk"
+      ],
+      "text": {
+        "en": "Which limit style appeals more: staying mild, or pushing limits with risk-aware planning and aftercare?"
+      },
+      "leftLabel": {
+        "en": "Stay mild"
+      },
+      "rightLabel": {
+        "en": "Push limits"
+      },
+      "scale": {
+        "type": "dots",
+        "dots": 7,
+        "pointsPerDot": 1
+      },
+      "subtitle": {
+        "en": "Boundary Push"
+      },
+      "enabledBy": {
+        "any": [
+          {
+            "type": "value",
+            "axisId": "edge_risk",
+            "op": ">=",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge_scene_dark",
+      "type": "choice",
+      "multiSelect": true,
+      "minSelections": 1,
+      "maxSelections": 3,
+      "relatedAxes": [
+        "edge_risk"
+      ],
+      "text": {
+        "en": "Which dark-scene frame fits?"
+      },
+      "options": [
+        {
+          "id": "edge_dark_interrogation",
+          "label": {
+            "en": "Interrogation, fear, or capture fantasy with negotiated limits"
+          },
+          "effects": [
+            {
+              "axisId": "edge_risk",
+              "value": 2
+            },
+            {
+              "axisId": "focus",
+              "value": -1
+            }
+          ]
+        },
+        {
+          "id": "edge_dark_cnc",
+          "label": {
+            "en": "CNC roleplay with explicit pre-consent and safewords"
+          },
+          "effects": [
+            {
+              "axisId": "edge_risk",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "id": "edge_dark_extreme",
+          "label": {
+            "en": "Extreme sensation only after careful risk negotiation"
+          },
+          "effects": [
+            {
+              "axisId": "edge_risk",
+              "value": 2
+            },
+            {
+              "axisId": "sensation",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "edge_dark_no",
+          "label": {
+            "en": "No darker frame"
+          },
+          "effects": [
+            {
+              "axisId": "edge_risk",
+              "value": -2
+            }
+          ]
+        }
+      ],
+      "subtitle": {
+        "en": "Boundary Push"
+      },
+      "enabledBy": {
+        "any": [
+          {
+            "type": "value",
+            "axisId": "edge_risk",
+            "op": ">=",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge_scene_safety",
+      "type": "choice",
+      "multiSelect": true,
+      "minSelections": 1,
+      "maxSelections": 3,
+      "relatedAxes": [
+        "edge_risk"
+      ],
+      "text": {
+        "en": "What safety structure still feels compatible with the fantasy?"
+      },
+      "options": [
+        {
+          "id": "edge_safe_script",
+          "label": {
+            "en": "A script with check-ins built into the roleplay"
+          },
+          "effects": [
+            {
+              "axisId": "edge_risk",
+              "value": 1
+            },
+            {
+              "axisId": "execution",
+              "value": -1
+            }
+          ]
+        },
+        {
+          "id": "edge_safe_greenyellowred",
+          "label": {
+            "en": "Clear safewords or traffic-light signals"
+          },
+          "effects": [
+            {
+              "axisId": "edge_risk",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "edge_safe_aftercare",
+          "label": {
+            "en": "Detailed aftercare and decompression plan"
+          },
+          "effects": [
+            {
+              "axisId": "edge_risk",
+              "value": 1
+            },
+            {
+              "axisId": "tone",
+              "value": -1
+            }
+          ]
+        },
+        {
+          "id": "edge_safe_none",
+          "label": {
+            "en": "I would not do this without strong safety structure"
+          },
+          "effects": [
+            {
+              "axisId": "edge_risk",
+              "value": 0
+            }
+          ]
+        }
+      ],
+      "subtitle": {
+        "en": "Boundary Push"
+      },
+      "enabledBy": {
+        "any": [
+          {
+            "type": "value",
+            "axisId": "edge_risk",
+            "op": ">=",
+            "value": 2
+          }
+        ]
+      }
+    }
+  ],
+  "finalResult": {
+    "if": {
+      "axisId": "bdsm_interest",
+      "metric": "score",
+      "op": ">=",
+      "value": 1
+    },
+    "then": {
+      "if": {
+        "axisId": "power",
+        "metric": "percent",
+        "op": ">=",
+        "value": 50
+      },
+      "then": {
+        "if": {
+          "axisId": "power",
+          "metric": "percent",
+          "op": ">=",
+          "value": 70
+        },
+        "then": {
+          "if": {
+            "axisId": "sensation",
+            "metric": "percent",
+            "op": ">=",
+            "value": 60
+          },
+          "then": {
+            "if": {
+              "axisId": "focus",
+              "metric": "percent",
+              "op": ">=",
+              "value": 60
+            },
+            "then": {
+              "id": "masochistic_receiver",
+              "title": {
+                "en": "Masochistic Receiver"
+              },
+              "description": {
+                "en": "You are interested in receiving and processing intensity. Physical sensation, restraint, soreness, or pressure can become a focused emotional language."
+              }
+            },
+            "else": {
+              "id": "trance_subject",
+              "title": {
+                "en": "Trance Subject"
+              },
+              "description": {
+                "en": "Your submission is strongly psychological. Anticipation, fear, permission, and mental vulnerability may pull you deeper than purely physical stimulation."
+              }
+            }
+          },
+          "else": {
+            "if": {
+              "axisId": "atmosphere",
+              "metric": "percent",
+              "op": "<",
+              "value": 45
+            },
+            "then": {
+              "id": "protocol_submissive",
+              "title": {
+                "en": "Protocol Submissive"
+              },
+              "description": {
+                "en": "Formal structure helps you surrender. Titles, posture, permissions, service, and ritualized expectations may give your submission clarity and depth."
+              }
+            },
+            "else": {
+              "if": {
+                "axisId": "atmosphere",
+                "metric": "percent",
+                "op": ">=",
+                "value": 65
+              },
+              "then": {
+                "id": "prey_heart",
+                "title": {
+                  "en": "Prey Heart"
+                },
+                "description": {
+                  "en": "Your submissive side leans primal. Chase, capture, wordless instinct, or animal intensity may feel more immersive than polished etiquette."
+                }
+              },
+              "else": {
+                "id": "devoted_submissive",
+                "title": {
+                  "en": "Devoted Submissive"
+                },
+                "description": {
+                  "en": "You are drawn to surrender, service, and being guided. The appeal is not passivity; it is choosing a trusted structure and letting yourself enter it fully."
+                }
+              }
+            }
+          }
+        },
+        "else": {
+          "if": {
+            "axisId": "power",
+            "metric": "percent",
+            "op": ">=",
+            "value": 55
+          },
+          "then": {
+            "if": {
+              "axisId": "interaction",
+              "metric": "percent",
+              "op": ">=",
+              "value": 60
+            },
+            "then": {
+              "id": "bratty_spark",
+              "title": {
+                "en": "Bratty Spark"
+              },
+              "description": {
+                "en": "You like resistance that invites a reaction. Teasing, testing, and playful defiance make the dynamic feel alive, especially when boundaries are clear."
+              }
+            },
+            "else": {
+              "if": {
+                "axisId": "tone",
+                "metric": "percent",
+                "op": "<",
+                "value": 45
+              },
+              "then": {
+                "id": "cherished_sub",
+                "title": {
+                  "en": "Cherished Submissive"
+                },
+                "description": {
+                  "en": "You surrender best through warmth. Praise, caretaking, protection, and emotional safety make intense power exchange feel secure and meaningful."
+                }
+              },
+              "else": {
+                "if": {
+                  "axisId": "tone",
+                  "metric": "percent",
+                  "op": ">=",
+                  "value": 60
+                },
+                "then": {
+                  "id": "humiliation_pet",
+                  "title": {
+                    "en": "Humiliation Pet"
+                  },
+                  "description": {
+                    "en": "You may enjoy consensual degradation, objectification, or being made small when it is framed by trust, limits, and aftercare."
+                  }
+                },
+                "else": {
+                  "id": "devoted_submissive",
+                  "title": {
+                    "en": "Devoted Submissive"
+                  },
+                  "description": {
+                    "en": "You are drawn to surrender, service, and being guided. The appeal is not passivity; it is choosing a trusted structure and letting yourself enter it fully."
+                  }
+                }
+              }
+            }
+          },
+          "else": {
+            "if": {
+              "axisId": "integration",
+              "metric": "percent",
+              "op": "<",
+              "value": 45
+            },
+            "then": {
+              "id": "lifestyle_sub",
+              "title": {
+                "en": "Lifestyle Submissive"
+              },
+              "description": {
+                "en": "You may enjoy a dynamic that continues through everyday rituals, service, permissions, or identity markers, as long as it remains explicitly consensual and balanced."
+              }
+            },
+            "else": {
+              "if": {
+                "axisId": "execution",
+                "metric": "percent",
+                "op": "<",
+                "value": 45
+              },
+              "then": {
+                "id": "ritual_sub",
+                "title": {
+                  "en": "Ritual Submissive"
+                },
+                "description": {
+                  "en": "You like surrender with ceremony. A prepared space, opening ritual, rules, and a clear closing help you feel held inside the scene."
+                }
+              },
+              "else": {
+                "if": {
+                  "axisId": "execution",
+                  "metric": "percent",
+                  "op": ">=",
+                  "value": 60
+                },
+                "then": {
+                  "id": "impulsive_bottom",
+                  "title": {
+                    "en": "Impulsive Bottom"
+                  },
+                  "description": {
+                    "en": "You prefer responsive, organic escalation. You still need negotiation, but once the frame is set, you like the scene to move by instinct and chemistry."
+                  }
+                },
+                "else": {
+                  "id": "scene_bottom",
+                  "title": {
+                    "en": "Scene-Only Bottom"
+                  },
+                  "description": {
+                    "en": "You enjoy yielding or receiving within a designated scene, then clearly returning to ordinary life once aftercare and debrief are complete."
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "else": {
+        "if": {
+          "axisId": "power",
+          "metric": "percent",
+          "op": "<",
+          "value": 30
+        },
+        "then": {
+          "if": {
+            "axisId": "sensation",
+            "metric": "percent",
+            "op": "<",
+            "value": 45
+          },
+          "then": {
+            "if": {
+              "axisId": "focus",
+              "metric": "percent",
+              "op": "<",
+              "value": 45
+            },
+            "then": {
+              "id": "mindgame_controller",
+              "title": {
+                "en": "Mindgame Controller"
+              },
+              "description": {
+                "en": "Psychological tension is your main instrument. Permission, suspense, denial, fear, and obedience may matter more than visible tools or heavy physical sensation."
+              }
+            },
+            "else": {
+              "id": "sadistic_conductor",
+              "title": {
+                "en": "Sadistic Conductor"
+              },
+              "description": {
+                "en": "You enjoy orchestrating intensity and reading the other person's reactions. Your ideal scene is controlled, responsive, and precise rather than careless."
+              }
+            }
+          },
+          "else": {
+            "if": {
+              "axisId": "atmosphere",
+              "metric": "percent",
+              "op": "<",
+              "value": 45
+            },
+            "then": {
+              "if": {
+                "axisId": "execution",
+                "metric": "percent",
+                "op": "<",
+                "value": 45
+              },
+              "then": {
+                "id": "ritual_dom",
+                "title": {
+                  "en": "Ritual Dominant"
+                },
+                "description": {
+                  "en": "You like to build a scene with preparation, opening beats, rules, and a proper close. Planning and symbolism help deepen authority rather than reduce it."
+                }
+              },
+              "else": {
+                "id": "ceremonial_owner",
+                "title": {
+                  "en": "Ceremonial Owner"
+                },
+                "description": {
+                  "en": "You combine dominant energy with protocol and ritual. Titles, rules, service, and controlled presentation help turn a scene into a formal world with emotional weight."
+                }
+              }
+            },
+            "else": {
+              "if": {
+                "axisId": "atmosphere",
+                "metric": "percent",
+                "op": ">=",
+                "value": 65
+              },
+              "then": {
+                "id": "feral_hunter",
+                "title": {
+                  "en": "Feral Hunter"
+                },
+                "description": {
+                  "en": "Your dominant side is more instinctive than formal. Chase, capture, growls, pressure, and predator energy may feel more authentic than etiquette or scripted ritual."
+                }
+              },
+              "else": {
+                "if": {
+                  "axisId": "tone",
+                  "metric": "percent",
+                  "op": "<",
+                  "value": 45
+                },
+                "then": {
+                  "id": "warm_guardian",
+                  "title": {
+                    "en": "Warm Guardian"
+                  },
+                  "description": {
+                    "en": "You lead through care. Praise, protection, monitoring, and aftercare are not separate from your dominance; they are the core of how your authority lands."
+                  }
+                },
+                "else": {
+                  "id": "harsh_handler",
+                  "title": {
+                    "en": "Harsh Handler"
+                  },
+                  "description": {
+                    "en": "You like authority with a sharper tone: objectifying, humiliating, or severe language can create charge when it is negotiated and contained."
+                  }
+                }
+              }
+            }
+          }
+        },
+        "else": {
+          "if": {
+            "axisId": "power",
+            "metric": "percent",
+            "op": "<",
+            "value": 45
+          },
+          "then": {
+            "if": {
+              "axisId": "interaction",
+              "metric": "percent",
+              "op": "<",
+              "value": 45
+            },
+            "then": {
+              "id": "strict_corrector",
+              "title": {
+                "en": "Strict Corrector"
+              },
+              "description": {
+                "en": "You are drawn to rules, accountability, and consequences. The spark comes from noticing resistance or disobedience and turning it into a structured exchange."
+              }
+            },
+            "else": {
+              "if": {
+                "axisId": "integration",
+                "metric": "percent",
+                "op": "<",
+                "value": 45
+              },
+              "then": {
+                "id": "lifestyle_authority",
+                "title": {
+                  "en": "Lifestyle Authority"
+                },
+                "description": {
+                  "en": "Power exchange can appeal beyond designated scenes. Daily rituals, service, permissions, or protocols may feel meaningful when they remain consensual and sustainable."
+                }
+              },
+              "else": {
+                "if": {
+                  "axisId": "execution",
+                  "metric": "percent",
+                  "op": ">=",
+                  "value": 60
+                },
+                "then": {
+                  "id": "spontaneous_top",
+                  "title": {
+                    "en": "Spontaneous Top"
+                  },
+                  "description": {
+                    "en": "You lead best in the moment. You may start with a negotiated frame, but the exciting part is reading the room and letting the scene grow organically."
+                  }
+                },
+                "else": {
+                  "id": "scene_top",
+                  "title": {
+                    "en": "Scene-Only Top"
+                  },
+                  "description": {
+                    "en": "You enjoy taking the active or leading role, but you prefer a clear container: negotiate, play, aftercare, and then return to everyday equality."
+                  }
+                }
+              }
+            }
+          },
+          "else": {
+            "id": "commanding_architect",
+            "title": {
+              "en": "Commanding Architect"
+            },
+            "description": {
+              "en": "You prefer responsibility, structure, and deliberate pacing. Your scenes work best when consent is explicit, expectations are clear, and your authority feels calm rather than chaotic."
+            }
+          }
+        }
+      }
+    },
+    "else": {
+      "id": "not_for_me",
+      "title": {
+        "en": "Not For Me"
+      },
+      "description": {
+        "en": "Your entry answer suggests BDSM is not currently appealing. The test stops here and treats that as a complete, valid result rather than forcing extra questions."
+      }
+    }
+  },
+  "medals": [
+    {
+      "id": "consent_forward",
+      "icon": "✓",
+      "title": {
+        "en": "Consent-Forward Explorer"
+      },
+      "description": {
+        "en": "You showed BDSM interest while selecting options that emphasize negotiation, aftercare, or clear containers."
+      },
+      "requirements": {
+        "all": [
+          {
+            "type": "answer",
+            "questionId": "entry_bdsm_openness",
+            "answerIds": [
+              "curious",
+              "yes",
+              "strong_yes"
+            ]
+          },
+          {
+            "type": "answer",
+            "questionId": "scene_boundary_fantasy",
+            "answerIds": [
+              "edge_scripted_cnc",
+              "edge_extreme_limits",
+              "edge_none"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "gear_fetish_enthusiast",
+      "icon": "G",
+      "title": {
+        "en": "Gear Fetish Enthusiast"
+      },
+      "description": {
+        "en": "Specific materials, outfits, or gear appear to be an important catalyst for your headspace."
+      },
+      "requirements": {
+        "all": [
+          {
+            "type": "value",
+            "axisId": "material_fetish",
+            "op": ">=",
+            "value": 6
+          }
+        ]
+      }
+    },
+    {
+      "id": "rubber_drone",
+      "icon": "R",
+      "title": {
+        "en": "Rubber Drone"
+      },
+      "description": {
+        "en": "Material fetish and non-human/object headspace combine into a sleek, identity-shifted gear fantasy."
+      },
+      "requirements": {
+        "all": [
+          {
+            "type": "value",
+            "axisId": "material_fetish",
+            "op": ">=",
+            "value": 6
+          },
+          {
+            "type": "value",
+            "axisId": "non_humanization",
+            "op": ">=",
+            "value": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "audience_current",
+      "icon": "A",
+      "title": {
+        "en": "Audience Current"
+      },
+      "description": {
+        "en": "Being perceived by consenting observers seems to intensify the scene for you."
+      },
+      "requirements": {
+        "all": [
+          {
+            "type": "value",
+            "axisId": "exhibitionism",
+            "op": ">=",
+            "value": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "private_sanctum",
+      "icon": "P",
+      "title": {
+        "en": "Private Sanctum"
+      },
+      "description": {
+        "en": "You kept visibility low and seem to prefer intimacy behind closed doors."
+      },
+      "requirements": {
+        "all": [
+          {
+            "type": "value",
+            "axisId": "exhibitionism",
+            "op": "<=",
+            "value": 0
+          },
+          {
+            "type": "answer",
+            "questionId": "scene_group_space",
+            "answerIds": [
+              "group_private_corner"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "petplay_signal",
+      "icon": "🐾",
+      "title": {
+        "en": "Petplay Signal"
+      },
+      "description": {
+        "en": "Your answers point toward pet, creature, handler, or training headspaces."
+      },
+      "requirements": {
+        "all": [
+          {
+            "type": "value",
+            "axisId": "non_humanization",
+            "op": ">=",
+            "value": 5
+          },
+          {
+            "type": "answer",
+            "questionId": "nh_scene_role",
+            "answerIds": [
+              "nh_role_pet"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "object_mode",
+      "icon": "O",
+      "title": {
+        "en": "Object Mode"
+      },
+      "description": {
+        "en": "You showed interest in useful-object, doll, furniture, statue, or drone-style identity shifts."
+      },
+      "requirements": {
+        "all": [
+          {
+            "type": "value",
+            "axisId": "non_humanization",
+            "op": ">=",
+            "value": 5
+          },
+          {
+            "type": "answer",
+            "questionId": "nh_scene_role",
+            "answerIds": [
+              "nh_role_doll",
+              "nh_role_furniture"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge_negotiator",
+      "icon": "E",
+      "title": {
+        "en": "Edge Negotiator"
+      },
+      "description": {
+        "en": "You are curious about darker fantasies, but your answers still keep consent and safety structure visible."
+      },
+      "requirements": {
+        "all": [
+          {
+            "type": "value",
+            "axisId": "edge_risk",
+            "op": ">=",
+            "value": 5
+          },
+          {
+            "type": "answer",
+            "questionId": "edge_scene_safety",
+            "answerIds": [
+              "edge_safe_script",
+              "edge_safe_greenyellowred",
+              "edge_safe_aftercare"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "protocol_polish",
+      "icon": "T",
+      "title": {
+        "en": "Protocol Polish"
+      },
+      "description": {
+        "en": "Titles, etiquette, ritual, or service structure are a strong part of your scene language."
+      },
+      "requirements": {
+        "all": [
+          {
+            "type": "value",
+            "axisId": "atmosphere",
+            "op": "<=",
+            "value": -4
+          },
+          {
+            "type": "value",
+            "axisId": "execution",
+            "op": "<=",
+            "value": -2
+          }
+        ]
+      }
+    },
+    {
+      "id": "primal_signal",
+      "icon": "W",
+      "title": {
+        "en": "Primal Signal"
+      },
+      "description": {
+        "en": "Your atmosphere leans toward instinct, pursuit, body language, and feral energy."
+      },
+      "requirements": {
+        "all": [
+          {
+            "type": "value",
+            "axisId": "atmosphere",
+            "op": ">=",
+            "value": 4
+          }
+        ]
+      }
+    },
+    {
+      "id": "brat_tamer_loop",
+      "icon": "B",
+      "title": {
+        "en": "Brat/Tamer Loop"
+      },
+      "description": {
+        "en": "Your answers highlight the chemistry of provocation and correction."
+      },
+      "requirements": {
+        "all": [
+          {
+            "type": "value",
+            "axisId": "interaction",
+            "op": ">=",
+            "value": 3
+          },
+          {
+            "type": "answer",
+            "questionId": "scene_correction_game",
+            "answerIds": [
+              "correction_brat",
+              "correction_enforce"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "soft_domestic_service",
+      "icon": "S",
+      "title": {
+        "en": "Soft Domestic Service"
+      },
+      "description": {
+        "en": "Service and care seem to matter as emotional structure, not just performance."
+      },
+      "requirements": {
+        "all": [
+          {
+            "type": "value",
+            "axisId": "tone",
+            "op": "<=",
+            "value": -3
+          },
+          {
+            "type": "value",
+            "axisId": "integration",
+            "op": "<=",
+            "value": -2
+          }
+        ]
+      }
+    },
+    {
+      "id": "mind_over_marks",
+      "icon": "M",
+      "title": {
+        "en": "Mind Over Marks"
+      },
+      "description": {
+        "en": "Psychological power exchange, suspense, and anticipation appear to outweigh pure physical sensation."
+      },
+      "requirements": {
+        "all": [
+          {
+            "type": "value",
+            "axisId": "focus",
+            "op": "<=",
+            "value": -4
+          }
+        ]
+      }
+    },
+    {
+      "id": "body_language",
+      "icon": "L",
+      "title": {
+        "en": "Body Language"
+      },
+      "description": {
+        "en": "Physical sensation, restraint, gear, and tangible intensity seem central to immersion."
+      },
+      "requirements": {
+        "all": [
+          {
+            "type": "value",
+            "axisId": "focus",
+            "op": ">=",
+            "value": 4
+          }
+        ]
+      }
+    }
+  ]
+}

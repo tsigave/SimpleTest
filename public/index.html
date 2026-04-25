@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Citanger Values Test</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="topbar" aria-label="Test controls">
+        <div>
+          <h1 id="test-title">Citanger Values Test</h1>
+        </div>
+        <div class="topbar-actions">
+          <select id="test-select" aria-label="Test"></select>
+          <select id="language-select" aria-label="Language"></select>
+          <button id="restart-button" class="icon-button" type="button" title="Restart" aria-label="Restart">
+            <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="M20 11a8 8 0 1 1-2.34-5.66" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M20 4v7h-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section id="intro-view" class="panel">
+        <p id="language-warning" class="language-warning hidden" data-i18n="languageUnavailable">The test is not available for this language, please choose alternative.</p>
+        <p id="test-description" class="lead"></p>
+        <button id="start-button" class="primary-button" type="button" data-i18n="start">Start test</button>
+      </section>
+
+      <section id="question-view" class="panel hidden" aria-live="polite">
+        <div class="question-meta">
+          <span id="progress-label"></span>
+          <span id="question-subtitle" class="question-subtitle"></span>
+        </div>
+        <h2 id="question-text"></h2>
+        <div id="axis-labels" class="axis-labels hidden">
+          <span id="left-label"></span>
+          <span id="right-label"></span>
+        </div>
+        <div id="answers" class="answers"></div>
+      </section>
+      <div id="question-footer" class="question-footer hidden">
+        <button id="back-button" class="secondary-button back-action" type="button" data-i18n="back">Back</button>
+      </div>
+
+      <section id="result-view" class="hidden">
+        <article id="final-result-card" class="final-result-card hidden">
+          <p class="eyebrow" data-i18n="finalResultTitle">Final Result</p>
+          <h3 id="final-result-title"></h3>
+          <p id="final-result-description"></p>
+        </article>
+        <section class="result-section panel">
+          <div class="result-section-head">
+            <p class="eyebrow" data-i18n="axesTitle">Values</p>
+            <label id="show-hidden-axes-wrap" class="toggle-row hidden">
+              <input id="show-hidden-axes" type="checkbox">
+              <span data-i18n="showHiddenAxes">Show hidden axes</span>
+            </label>
+          </div>
+          <div id="axes-result" class="result-grid"></div>
+        </section>
+        <section class="result-section panel">
+          <p class="eyebrow" data-i18n="medalsTitle">Medals</p>
+          <div id="medals-result" class="medals"></div>
+        </section>
+        <section class="panel share-panel">
+          <p class="eyebrow" data-i18n="shareTitle">Link and Share</p>
+          <div class="share-box">
+            <label for="result-token" data-i18n="shareToken">Encrypted result string</label>
+            <textarea id="result-token" rows="3" readonly></textarea>
+            <div class="share-actions">
+              <button id="copy-link-button" class="secondary-button" type="button" data-i18n="copyLink">Copy link</button>
+              <button id="copy-token-button" class="secondary-button" type="button" data-i18n="copyToken">Copy string</button>
+            </div>
+          </div>
+        </section>
+        <div class="result-actions">
+          <button id="result-back-button" class="secondary-button back-action hidden" type="button" data-i18n="back">Back</button>
+          <button id="test-again-button" class="primary-button" type="button" data-i18n="testAgain">Test again</button>
+        </div>
+      </section>
+
+      <section id="error-view" class="panel hidden" role="alert"></section>
+    </main>
+    <script src="/app.js" defer></script>
+  </body>
+</html>

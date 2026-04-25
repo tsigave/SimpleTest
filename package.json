@@ -1,0 +1,15 @@
+{
+  "name": "citanger-values-test",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A configurable 8values-style questionnaire with server-side scoring and encrypted share results.",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js",
+    "validate:data": "node server.js --validate"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
